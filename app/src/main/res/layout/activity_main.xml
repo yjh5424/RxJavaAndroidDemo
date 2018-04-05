@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="junghyeon.study.rxjavaandroiddemo.MainActivity">
+
+
+    <Button
+        android:layout_alignParentLeft="true"
+        android:id="@+id/recyclerview_rx"
+        android:text="Rx Recyclerview"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:textColor="#000"
+        android:background="#FFAB00"
+        android:layout_marginBottom="24dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/button_event_rx"
+        android:text="Rx Button event"
+        android:textColor="#000"
+        android:background="#FFAB00"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/rx_login"
+        android:text="Rx Login Processing"
+        android:textColor="#000"
+        android:background="#FFAB00"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

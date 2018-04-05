@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gaida_splash"
+            android:paddingRight="80dp"
+            android:paddingLeft="80dp"
+            android:paddingTop="24dp"
+            android:scaleType="centerCrop"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="ID"
+                android:theme="@style/EditTextStyle"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF" />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:password="true"
+                android:theme="@style/EditTextStyle"
+                android:layout_width="280dp"
+                android:layout_below="@+id/id"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:padding="10dp"
+                android:textColor="#FFFF"
+                android:textColorHint="#FFF" />
+
+
+            <TextView
+                android:id="@+id/password_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cb_login_remember"
+                android:layout_alignEnd="@+id/password"
+                android:layout_toLeftOf="@id/password"
+                android:layout_marginBottom="4dp"
+                android:padding="10dp"
+                android:text="특수문자를 확인해주세요"
+                android:textColor="@color/redColor"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+
+            <CheckBox
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/password"
+                android:id="@+id/cb_login_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:text="자동 로그인"
+                android:textColor="@android:color/white"
+                android:buttonTint="#FFF" />
+
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="280dp"
+                android:layout_below="@+id/cb_login_remember"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="로그인"
+                android:background="#0277BD"
+                android:textColor="#FFF"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+
+</LinearLayout>
